@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Breno Neves Nascimento">
+  <title>Currículo - Breno Neves</title>
+  <link href="bootstrap-5.3.0-dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-light: #007bff;
+      --primary-dark: #0033ff;
+      --accent-color: #a970ff;
+      --bs-border-radius: 0.75rem;
+      --banner-gradient: linear-gradient(135deg, #007bff, #0dcaf0);
+      --banner-border: #0a58ca;
+    }
+
+    html[data-bs-theme='dark'] {
+      --bs-body-bg: #121212;
+      --bs-body-color: #cfcfcf;
+      --bs-primary: var(--primary-dark);
+      --banner-gradient: linear-gradient(135deg, #1e3c72, #2a5298);
+      --banner-border: #1a2a6c;
+      --back-background:#1e1e1e;
+      --back-color: #f5f5f5;
+    }
+
+    body {
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .banner {
+      background: var(--banner-gradient);
+      color: white;
+      border-bottom: 4px solid var(--banner-border);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .section-title {
+      color: var(--bs-primary);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .cert-btn {
+      margin: 5px;
+    }
+
+    .card {
+      border-radius: var(--bs-border-radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    #back {
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: var(--back-background);
+    color: var(--back-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateX(50px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    #back:hover {
+    transform: translateX(45px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    body, .navbar, .card, .banner, main, section, ul, li, p, h1, h2, h5 {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm px-3 bg-body">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" id="back" href="index.html"><i class="bi bi-house"></i>&leftarrow; Voltar ao Portfólio</a></li>
+      </ul>
+      <div class="form-check form-switch ms-3">
+        <input class="form-check-input" type="checkbox" id="themeSwitch">
+        <label class="form-check-label" for="themeSwitch">Modo Escuro</label>
+      </div>
+    </div>
+  </nav>
+  <section class="banner mt-5">
+    <div class="container">
+      <h1 class="fw-bold">Currículo - Breno Neves Nascimento</h1>
+      <p><i class="bi bi-telephone"></i> (61) 98452-4017 | 
+         <i class="bi bi-envelope"></i> bbrenonevess@gmail.com | 
+         <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/breno-neves" target="_blank" class="text-white">LinkedIn</a> | 
+         <i class="bi bi-github"></i> <a href="https://github.com/BrenoNevess" target="_blank" class="text-white">GitHub</a>
+      </p>
+    </div>
+  </section>
+  <main class="container py-5">
+    <section class="mb-5">
+      <h2 class="section-title">Resumo Profissional</h2>
+      <p>Estudante de Ciência da Computação com conhecimento em Programação Web e grande interesse na área de Cibersegurança, buscando se tornar hacker ético. Experiência adquirida em projetos acadêmicos, estudos independentes e cursos técnicos em TI. Habilidades interpessoais em comunicação, trabalho em equipe e organização. Sempre em busca de aprimoramento técnico e certificações.</p>
+    </section>
+    <section class="mb-5">
+      <h2 class="section-title">Formação Acadêmica</h2>
+      <ul>
+        <li><strong>Bacharelado em Ciência da Computação</strong> – UNICEUB, início em 2025 - conclusão prevista em 2028</li>
+        <li><strong>Curso Técnico em TI</strong> – Escola Técnica Deputado Juarezão, início em 2024 - conclusão em junho de 2025</li>
+        <li><strong>Ensino Médio</strong> – Magnus, concluído em 2024</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Certificações</h2>
+      <div>
+        <a href="Certificados/CertificadoCibersegurança.pdf" target="_blank" class="btn btn-primary cert-btn"><i class="bi bi-shield-lock"></i> Introdução à Cibersegurança</a>
+        <a href="certificados/defesa_rede.pdf" target="_blank" class="btn btn-primary cert-btn"><i class="bi bi-wifi"></i> Defesa de Rede (em andamento)</a>
+        <a href="certificados/ingles_intermediario.pdf" target="_blank" class="btn btn-primary cert-btn"><i class="bi bi-translate"></i> Inglês Intermediário (em andamento)</a>
+        <a href="certificados/conceitos_redes.pdf" target="_blank" class="btn btn-primary cert-btn"><i class="bi bi-diagram-3"></i> Conceitos Básicos em Redes</a>
+        <a href="certificados/tecnico_ti.pdf" target="_blank" class="btn btn-primary cert-btn"><i class="bi bi-laptop"></i> Técnico em TI</a>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Experiência Profissional</h2>
+      <p>Buscando a primeira oportunidade profissional na área de tecnologia. Disposição para aprender, colaborar em equipe e crescer junto com a empresa.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Projetos</h2>
+      <div class="card p-3">
+        <h5>BeatSense</h5>
+        <p>Protótipo de site desenvolvido como Projeto de Conclusão do Curso Técnico em TI, voltado ao ensino de teoria musical para iniciantes e aprendizes da Congregação Cristã no Brasil (CCB). Focado em acessibilidade e didática simples.</p>
+        <a href="https://github.com/BrenoNevess/beatsense" class="btn btn-outline-primary" target="_blank">Ver no GitHub</a>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Habilidades</h2>
+      <ul>
+        <li><strong>Linguagens:</strong> JavaScript, C, PHP e Python</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Banco de Dados:</strong> MySQL</li>
+        <li><strong>Segurança da Informação</strong></li>
+        <li><strong>Redes</strong></li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="section-title">Habilidades Interpessoais</h2>
+      <ul>
+        <li>Comunicação</li>
+        <li>Trabalho em equipe</li>
+        <li>Organização</li>
+        <li>Colaboração</li>
+      </ul>
+    </section>
+    <section class="mb-5">
+      <h2 class="section-title">Idiomas</h2>
+      <ul>
+        <li>Inglês: Intermediário (em andamento)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="bootstrap-5.3.0-dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const themeSwitch = document.getElementById('themeSwitch');
+    const htmlElement = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      htmlElement.setAttribute('data-bs-theme', 'dark');
+      themeSwitch.checked = true;
+    }
+
+    themeSwitch.addEventListener('change', () => {
+      const theme = themeSwitch.checked ? 'dark' : 'light';
+      htmlElement.setAttribute('data-bs-theme', theme);
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+</body>
+</html>
